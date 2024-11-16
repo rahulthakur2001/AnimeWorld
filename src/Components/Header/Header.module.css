@@ -1,0 +1,17 @@
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: pink;
+    height: 100vh;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+}
+.btn{
+    background: var(--bigbtn-color);
+}

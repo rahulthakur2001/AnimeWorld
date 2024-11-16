@@ -1,0 +1,33 @@
+.top-items-mIN-CON {
+    padding: 20px;
+    background-color: white;
+    color: #111112;
+    width: 98%;
+    height: 126px;
+    margin: auto;
+    min-height: 126px;
+    box-shadow: rgba(255, 255, 255, 0.09) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    .top-items {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  
+    .top-item {
+      position: relative;
+      width: 200px;
+      height: 0; 
+      padding-top: 56.25%; 
+      overflow: hidden;
+    }
+  
+    .top-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100x;
+      height: 100px;
+      object-fit: cover; 
+    }
+  }
+  
