@@ -11,6 +11,7 @@ import { CiShoppingTag } from "react-icons/ci";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CiGift } from "react-icons/ci"; import { CiBellOn } from "react-icons/ci";
+import Categories from '../Categories/Categories';
 
 const Navbar = () => {
   return (
@@ -56,7 +57,13 @@ const Navbar = () => {
         <button className={crop.dropdownButton}><BsThreeDotsVertical size={20} /></button>
       </div>
     </div>
+    
   );
+  
 };
+
+<Categories />
+
+
 
 export default Navbar;
