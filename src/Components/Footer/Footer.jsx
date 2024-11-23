@@ -10,6 +10,7 @@ import payment from "../../assets/Images/payment-method.svg";
 import { PiFacebookLogoBold } from "react-icons/pi";
 import { BsTwitterX } from "react-icons/bs";
 import { FiYoutube } from "react-icons/fi";
+import BrandDirectory from "../BrandDirectory/BrandDirectory";
 
 const Footer = () => {
   const about = [
@@ -57,7 +58,7 @@ const Footer = () => {
     { title: "Burari,Shiv Chowk" },
     { title: "Dlehi-110034" },
     { title: "New Delhi, India" },
-    { title: "Telephone : 9560994962 / 9315101006", color: "blue" },
+    { title: "Telephone : 9560994962 / 9315101006"},
   ];
 
   const section1 = [
@@ -84,6 +85,7 @@ const Footer = () => {
 
   return (
     <div>
+      <BrandDirectory/>
       <div className="main-footer">
         <div className="footer-container">
           <div className="footer-left">
@@ -107,16 +109,8 @@ const Footer = () => {
                 <h3>{section.title}</h3>
                 <ul>
                   {section.items.map((item, itemIndex) => (
-                    <li
-                      key={itemIndex}
-                      style={{ color: item.color || "#a6a6a6" }}
-                      className="only-hover-footer"
-                    >
-                      {item.link ? (
-                        <Link to={item.link}>{item.title}</Link>
-                      ) : (
-                        item.title
-                      )}
+                    <li key={itemIndex}>
+                      <Link to={item.link}>{item.title}</Link>
                     </li>
                   ))}
                 </ul>
@@ -131,6 +125,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        
         </div>
         <hr />
         <div className="footer-bottom-row">

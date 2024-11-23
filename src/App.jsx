@@ -9,17 +9,19 @@ import Footer from './Components/Footer/Footer'
 import BrandDirectory from './Components/BrandDirectory/BrandDirectory'
 import Slider from './Components/Common/CommonSlider/Slider'
 import TopItem from './Components/Common/CommonSlider/TopItem/TopItem'
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './Components/Navbar/Navbar';
+import Navbar from './Components/Navbar/Navbar'
+import Dashboard from './Components/Dashborard/Dashboard'
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+        <Navbar/>
         <Routes>
-            <Route path='/' element={<Header/>}/>
+
+            <Route path='/' element={<Dashboard/>}/>
+            <Route path='/header' element={<Navbar/>}/>
             <Route path='/topitem' element={<TopItem/>}/>
             <Route path='/swiper' element={<Slider/>}/>
             <Route path='/home' element={<Login/>}/>
@@ -27,7 +29,9 @@ function App() {
             <Route path='/privacypolicy' element={<Privacy/>}/>
             <Route path='/footer' element={<Footer/>}/>
             <Route path='/brand_directory' element={<BrandDirectory/>}/>
+            <Route path='/privacypolicy' element={<Privacy/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )
