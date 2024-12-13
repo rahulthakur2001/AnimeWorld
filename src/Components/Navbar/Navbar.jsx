@@ -11,7 +11,6 @@ import { CiShoppingTag } from "react-icons/ci";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoIosLogOut } from "react-icons/io";
 import { CiGift } from "react-icons/ci"; import { CiBellOn } from "react-icons/ci";
-import Categories from '../Categories/Categories';
 
 const Navbar = () => {
   return (
@@ -40,10 +39,6 @@ const Navbar = () => {
           <div className={crop.dropdownItem}><CiGift size={25} className={crop.dropdownIcon} /> <p>Gift Card</p></div>
           <div className={crop.dropdownItem}><CiBellOn size={25} className={crop.dropdownIcon} /> <p>Notification</p></div>
           <div className={crop.dropdownItem}><IoIosLogOut size={25} className={crop.dropdownIcon} /> <p>Log Out</p></div>
-
-          
-          
-          
         </div>
       </div>
 
@@ -62,7 +57,7 @@ const Navbar = () => {
   
 };
 
-<Categories />
+
 
 
 

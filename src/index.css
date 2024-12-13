@@ -3,3 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+a,Link {
+  text-decoration: none;
+  color: inherit;
+}
+button{
+    cursor: pointer;
+}
+/* global.css */
+:root {
+  --primary-color: #2874f0;
+  --bigbtn-color: #3498db;
+  --mediumbtn-color: #2ecc71;
+  --largebtn-color: #FB6408;
+  --paralight-color:#878787;
+  --link--color:#2874f0;
+  --font-: "Roboto", sans-serif;
+  --font-size-base: 16px;
+}

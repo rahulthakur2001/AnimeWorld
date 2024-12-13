@@ -1,0 +1,47 @@
+.terms_main {
+    margin: auto;
+    padding: 32px;
+    width: 978px;
+    background-color: #fff;
+  }
+  
+  .terms_main h2 {
+    font-size: var(--font-size-base);
+  }
+  
+  .terms_main p {
+    line-height: 1.5;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .term {
+    position: relative;
+  }
+  
+  .term button {
+    position: fixed;  
+    top: 0;  
+    left: 45%;  
+    padding: 9px 13px;
+    color: var(--link--color); 
+    background-color: #fff;
+    border: 1px solid #dedada;
+    border-radius: 3px;
+    font-weight: 600;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.11);
+    outline: none;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .term button.show {
+    opacity: 1; 
+  }
+  
+  .term button svg {
+    margin-right: 10px;
+    font-weight: 8000;
+    font-size: 1rem;
+  }
+  

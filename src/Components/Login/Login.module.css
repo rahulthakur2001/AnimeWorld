@@ -1,0 +1,292 @@
+/* Main login container */
+.mainLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(235, 235, 235);
+}
+
+/* Login container */
+.loginContainer {
+  display: flex;
+  width: 66%;
+  height: 90vh;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* Left Section */
+.leftSection {
+  width: 50%;
+  padding: 30px;
+  background: var(--primary-color);
+  position: relative;
+  color: white;
+  flex: 1;
+}
+
+.leftSection h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.leftSection p {
+  font-size: 1.2rem;
+  color: #dddcdc;
+}
+
+.leftSection img {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  width: 75%;
+  object-fit: cover;
+}
+
+/* Right Section */
+.rightSection {
+  width: 50%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  flex: 1.5;
+  position: relative;
+  height: auto; /* Default height is auto */
+}
+
+.rightSection p {
+  margin-top: 8%;
+  color: var(--paralight-color);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.rightSection p span {
+  color: var(--link--color);
+}
+
+/* Input Wrapper */
+.inputWrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.rightSection input[type="text"] {
+  width: 100%;
+  padding: 10px 10px 10px 0px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #2874f0;
+}
+
+/* Input label */
+.rightSection label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* Focus and filled input label styles */
+.rightSection input[type="text"]:focus ~ label,
+.rightSection input[type="text"].filled ~ label {
+  top: 0;
+  font-size: 12px;
+  color: #3498db;
+}
+
+/* Button */
+.rightSection button {
+  padding: 10px 20px;
+  background-color: var(--largebtn-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 48px;
+  font-size: 15px;
+}
+
+/* New Account section */
+.newac {
+  position: absolute;  /* Make the section position absolute within the right section */
+  bottom: 20px;  /* Position it 20px from the bottom */
+  left: 50%;  /* Center it horizontally */
+  transform: translateX(-50%);  /* Offset the element to ensure it's exactly centered */
+  font-size: 0.9rem;
+}
+
+.newac p {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .loginContainer {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .leftSection {
+    width: 100%;
+    padding: 20px;
+    background: var(--primary-color);
+  }
+
+  .rightSection {
+    width: 100%;
+    padding: 20px;
+    height: 100%;  /* Ensure right section occupies full height on mobile */
+    position: relative;
+  }
+
+  .leftSection h3 {
+    font-size: 24px;
+  }
+
+  .leftSection p {
+    font-size: 1rem;
+  }
+
+  .leftSection img {
+    width: 100%;
+    position: relative;
+    bottom: unset;
+    left: unset;
+  }
+
+  .rightSection input[type="text"] {
+    padding: 8px 10px;
+  }
+
+  .rightSection button {
+    font-size: 14px;
+    height: 45px;
+  }
+
+  .newac {
+    position: relative;  /* Make it position relative on mobile so it flows naturally */
+    left: 0;  /* Reset left positioning */
+    transform: none;  /* Remove centering transform */
+    bottom: 0;  /* Allow it to appear naturally at the bottom of the form */
+    margin-top: 20px;
+  }
+
+  .newac p {
+    font-size: 0.8rem;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .rightSection p {
+    font-size: 11px;
+  }
+}
+
+/* For tablets (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .loginContainer {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .leftSection {
+    padding: 25px;
+  }
+
+  .rightSection {
+    padding: 25px;
+    height: 100%;  /* Make sure right section has sufficient height */
+  }
+
+  .leftSection h3 {
+    font-size: 26px;
+  }
+
+  .leftSection p {
+    font-size: 1.1rem;
+  }
+
+  .leftSection img {
+    width: 70%;
+  }
+
+  .rightSection input[type="text"] {
+    padding: 10px 10px 10px 0px;
+  }
+
+  .rightSection button {
+    font-size: 15px;
+    height: 48px;
+  }
+
+  .newac {
+    position: absolute;  /* Keep absolute positioning */
+    bottom: 20px;  /* Position it at the bottom */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);
+  }
+
+  .newac p {
+    font-size: 0.9rem;
+    left: 120px;
+    bottom: 20px;
+  }
+}
+
+/* For larger screens (1024px and above) */
+@media (min-width: 1024px) {
+  .loginContainer {
+    width: 66%;
+  }
+
+  .leftSection {
+    padding: 30px;
+  }
+
+  .rightSection {
+    padding: 30px;
+    height: auto;
+  }
+
+  .leftSection h3 {
+    font-size: 28px;
+  }
+
+  .leftSection p {
+    font-size: 1.2rem;
+  }
+
+  .leftSection img {
+    width: 75%;
+  }
+
+  .rightSection input[type="text"] {
+    padding: 10px 10px 10px 0px;
+  }
+
+  .rightSection button {
+    font-size: 15px;
+    height: 48px;
+  }
+
+  .newac {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
