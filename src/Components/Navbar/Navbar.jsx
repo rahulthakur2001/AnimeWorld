@@ -52,7 +52,13 @@ const Navbar = () => {
         <button className={crop.dropdownButton}><BsThreeDotsVertical size={20} /></button>
       </div>
     </div>
+    
   );
+  
 };
+
+
+
+
 
 export default Navbar;
