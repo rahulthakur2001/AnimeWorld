@@ -1,6 +1,6 @@
 import React from 'react'
-import TopItem from '../Common/CommonSlider/TopItem/TopItem'
-import Slider from '../Common/CommonSlider/Slider'
+import TopItem from '../Common/TopItem/TopItem'
+import Slider from '../Common/Slider/Slider'
 
 const Dashboard = () => {
   return (

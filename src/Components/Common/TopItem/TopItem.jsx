@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./TopItem.scss";
-import top1 from "../../../../assets/Images/top1.png";
-import top2 from "../../../../assets/Images/top2.png";
-import top3 from "../../../../assets/Images/top3.png";
-import top4 from "../../../../assets/Images/top4.jpg";
-import top5 from "../../../../assets/Images/top5.jpg";
-import top6 from "../../../../assets/Images/top6.png";
-import top7 from "../../../../assets/Images/top7.png";
-import top8 from "../../../../assets/Images/top8.png";
+import top1 from "../../../assets/Images/top1.png";
+import top2 from "../../../assets/Images/top2.png";
+import top3 from "../../../assets/Images/top3.png";
+import top4 from "../../../assets/Images/top4.jpg";
+import top5 from "../../../assets/Images/top5.jpg";
+import top6 from "../../../assets/Images/top6.png";
+import top7 from "../../../assets/Images/top7.png";
+import top8 from "../../../assets/Images/top8.png";
 import { Link } from "react-router-dom";
 
 const TopItem = () => {
