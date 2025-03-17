@@ -46,10 +46,9 @@ const TopItem = () => {
     { Name: "Women Western", submenu: "WomenWestern" },
   ];
   const TopProduct = [
-    { Product: top1, name: "Grocery", items:null},
-    { Product: top2, name: "Moblies", items:null},
+    { Product: top1, name: "Grocery", items:Fashion},
+    { Product: top2, name: "Moblies", items:Fashion},
     { Product: top3, name: "Fashion", items: Fashion },
-    { Product: web, name: "Fashion", items: "Fashion" },
     { Product: top4, name: "Electronics", items: "" },
     { Product: top5, name: "Home & Furniture", items: "" },
     { Product: top6, name: "Apllianecs", items: "" },
@@ -71,13 +70,13 @@ const TopItem = () => {
                     hoveredMenu === product.name && (
                         <ul className="menu">
                             {
-                                product.items.map((menu)=>(
+                                product?.items?.map((menu)=>(
                                     <li key={menu.Name} onMouseEnter={()=>setHoveredSubMenu(menu.Name)} onMouseLeave={()=>setHoveredSubMenu(null)}>{menu.Name}
                                     {
                                         hoveredSubMenu === menu.Name && (
                                             <ul className="submenu">
                                                 {
-                                                    menu.submenu.map((submenu)=>(
+                                                    menu?.submenu?.map((submenu)=>(
                                                         <Link to={submenu.link}>
                                                         <li key={submenu.name}>{submenu.name}</li>
                                                         </Link>
